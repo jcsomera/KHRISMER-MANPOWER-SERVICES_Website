@@ -439,7 +439,7 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%);
+  background: linear-gradient(0deg, rgb(114, 255, 86) 0%, rgb(15, 0, 151)100%);
   padding: 0;
 }
 
@@ -497,11 +497,11 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #ef6603;
+  border: 2px solid #ebef03;
 }
 
 #hero .btn-get-started:hover {
-  background: #ef6603;
+  background: #ebef03;
   color: #fff;
   text-decoration: none;
 }
