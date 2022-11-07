@@ -1,6 +1,6 @@
 /**
-* Template Name: Selecao - v4.9.1
-* Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+* Template Name: Techie - v4.9.1
+* Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -66,6 +66,10 @@
   const scrollto = (el) => {
     let header = select('#header')
     let offset = header.offsetHeight
+
+    if (!header.classList.contains('header-scrolled')) {
+      offset -= 16
+    }
 
     let elementPos = select(el).offsetTop
     window.scrollTo({
@@ -155,13 +159,52 @@
   });
 
   /**
+   * Preloader
+   */
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
+
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
+  });
+
+  /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
+        itemSelector: '.portfolio-item'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -209,35 +252,6 @@
   });
 
   /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  });
-
-  /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
@@ -248,5 +262,10 @@
       mirror: false
     })
   });
+
+  /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();
 
 })()
