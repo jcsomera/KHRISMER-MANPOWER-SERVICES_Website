@@ -510,10 +510,12 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.323);
+
 }
 
 #hero .carousel-container {
-  display: flex;
+  display: none;
   align-items: flex-end;
   justify-content: center;
   position: absolute;
@@ -524,10 +526,11 @@ h6 {
 }
 
 #hero .carousel-content {
-  background: rgba(4, 4, 4, 0.7);
+  text-align: center;
+  background: rgba(4, 4, 4, 0.9);
   padding: 20px;
   color: #fff;
-  border-top: 5px solid #1bbd36;
+  border-top: 5px solid #000;
 }
 
 #hero .carousel-content h2 {
@@ -551,12 +554,12 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #1bbd36;
+  border: 2px solid #fff;
 }
 
 #hero .btn-get-started:hover {
-  background: #1bbd36;
-  color: #fff;
+  background: #eee;
+  color: #000;
   text-decoration: none;
 }
 
@@ -594,9 +597,8 @@ h6 {
   width: auto;
   height: auto;
   background: rgba(255, 255, 255, 0.4);
-  border-radius: 50px;
   transition: 0.3s;
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
   width: 54px;
   height: 54px;
   display: flex;
@@ -658,95 +660,6 @@ h6 {
     height: 120vh;
   }
 }
-
-.hero-waves {
-  display: block;
-  width: 100%;
-  height: 60px;
-  position: absolute bottom;
-}
-
-.wave1 use {
-  -webkit-animation: move-forever1 10s linear infinite;
-  animation: move-forever1 10s linear infinite;
-  -webkit-animation-delay: -2s;
-  animation-delay: -2s;
-}
-
-.wave2 use {
-  -webkit-animation: move-forever2 8s linear infinite;
-  animation: move-forever2 8s linear infinite;
-  -webkit-animation-delay: -2s;
-  animation-delay: -2s;
-}
-
-.wave3 use {
-  -webkit-animation: move-forever3 6s linear infinite;
-  animation: move-forever3 6s linear infinite;
-  -webkit-animation-delay: -2s;
-  animation-delay: -2s;
-}
-
-@-webkit-keyframes move-forever1 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-
-@keyframes move-forever1 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-
-@-webkit-keyframes move-forever2 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-
-@keyframes move-forever2 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-
-@-webkit-keyframes move-forever3 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-
-@keyframes move-forever3 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-
 
 /*--------------------------------------------------------------
 # Sections General
