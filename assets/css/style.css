@@ -417,9 +417,10 @@ h6 {
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 200px;
+  bottom: 500px;
   left: 0;
-  padding: 40px 0;
+  padding-top: 50px;
+  padding-left: 30px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
@@ -453,38 +454,14 @@ h6 {
   margin: 15px;
 }
 
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 10px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
-}
+@media (min-width: 991px) {
+  .navbar-mobile{
+    visibility: hidden;
+  } 
 
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #0f0097;
-}
-
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
+  .navbar-mobile ul li{
+    visibility: hidden;
+  }  
 }
 
 /*--------------------------------------------------------------
@@ -596,7 +573,7 @@ h6 {
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
   transition: 0.3s;
   color: white;
   width: 54px;
@@ -892,34 +869,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-.features .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-}
-
-.features .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #0f0097;
-}
-
-.features .icon-box p {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-}
-
-.features .image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
-
-/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
@@ -1107,101 +1056,6 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
-.faq {
-  background: linear-gradient(0deg, rgb(114, 255, 86) 0%, rgb(15, 0, 151)100%);
-}
-
-.faq .section-title h2,
-.faq .section-title p {
-  color: #fff;
-}
-
-.faq .section-title h2::after {
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.faq .faq-list {
-  padding: 0 100px;
-}
-
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li+li {
-  margin-top: 15px;
-}
-
-.faq .faq-list li {
-  padding: 30px;
-  background: #fff;
-  border-radius: 5px;
-  position: relative;
-}
-
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #8577fb;
-}
-
-.faq .faq-list .icon-show,
-.faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: #2c4964;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #0f0097;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
 }
 
 /*--------------------------------------------------------------
