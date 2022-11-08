@@ -487,7 +487,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.323);
+  background: linear-gradient( 0deg, rgb(114, 255, 86) 0%, rgb(15, 0, 151)100%);
 
 }
 
