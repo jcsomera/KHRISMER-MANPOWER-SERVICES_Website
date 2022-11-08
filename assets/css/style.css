@@ -126,7 +126,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #106eea;
+  background: black;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
