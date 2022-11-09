@@ -942,6 +942,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  background-color: #eee;
 }
 
 .portfolio-details .portfolio-details-slider img {
