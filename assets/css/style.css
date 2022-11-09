@@ -657,12 +657,12 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: rgb(15, 0, 151);
+  background: #18d26e;
   position: relative;
 }
 
 .about .content .read-more:hover {
-  background: rgb(114, 255, 86);
+  background: rgb(15, 0, 151);
 }
 
 .about .content .read-more i {
@@ -940,6 +940,7 @@ section {
 .portfolio .portfolio-wrap .img-fluid {
 height: 300px;
 width: 300%;
+background-size: cover;
 }
 
 /*--------------------------------------------------------------
