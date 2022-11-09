@@ -1166,8 +1166,11 @@ section {
 }
 
 @media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 56px;
+  .breadcrumbs h2 {
+    margin-left: 15px;
+  }
+  .breadcrumbs a {
+    margin-left: 20px;
   }
 }
 
