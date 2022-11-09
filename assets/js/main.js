@@ -287,4 +287,13 @@
    */
   new PureCounter();
 
+  /**
+   * Automatic Footer Date Change 
+   */
+  var year = new Date().getFullYear();
+
+  var date = `&copy; Copyright ${year}. Khrismer Manpower Services. All Rights Reserved`;
+
+  document.getElementsByTagName('footer')[0].innerHTML = date;
+
 })()
