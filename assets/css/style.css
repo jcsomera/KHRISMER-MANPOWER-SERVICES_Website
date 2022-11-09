@@ -817,7 +817,6 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  
 }
 
 .portfolio #portfolio-flters {
@@ -936,6 +935,11 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: calc(50% - 50px);
+}
+
+.portfolio .portfolio-wrap .img-fluid {
+height: 300px;
+width: 300%;
 }
 
 /*--------------------------------------------------------------
