@@ -619,7 +619,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding: 120px 0;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .about .content h3 {
@@ -812,7 +812,7 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .portfolio .portfolio-item {
