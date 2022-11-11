@@ -268,7 +268,7 @@
       type: 'bullets',
       clickable: true
     }
-  });
+  });  
 
   /**
    * Animation on scroll
